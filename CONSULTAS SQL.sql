@@ -1,10 +1,12 @@
 --::::ACTIVIDAD 001::::
 --NOMBRE: Diego Lipa
---nombre
---apellido paterno y materno juntos ()
---edad
---tipo documento (DNI)
---celular
+--01 REALIZAR UN REPORTE CON LOS SIGUIENTES DATOS:
+	--nombre
+	--apellido paterno y materno juntos ()
+	--edad
+	--tipo documento (DNI)
+	--celular
+
 SELECT p.NOMBRES, p.APELLIDO_PATERNO , p.APELLIDO_MATERNO,
 p.FECHA_NACIMIENTO ,p.ID_TIPO_DOCUMENTO , p.CELULAR 
 FROM PERSONAS p ;
