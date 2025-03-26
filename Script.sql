@@ -1,4 +1,4 @@
---Nombre: Diego Lipa
+--Nombre: Diego Lipa Choque
 
 SELECT * FROM PERSONAS p ;
 SELECT * FROM GENEROS g ;
