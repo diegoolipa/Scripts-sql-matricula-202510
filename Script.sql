@@ -9,7 +9,7 @@ SELECT * FROM PERSONAL ;
 
 --CREANDO LA TABLA PERSONAL;
 CREATE TABLE personal(
-	id_personal NUMBER FOREIGN KEY,
+	id_personal NUMBER PRIMARY KEY,
 	id_persona NUMBER UNIQUE,
 	cargo varchar2(100) NOT NULL,
 	tipo_jornada varchar2(50) NOT NULL,
@@ -22,5 +22,14 @@ CREATE TABLE personal(
 	FOREIGN KEY (id_persona)
 	  REFERENCES PERSONAS(id_persona)
 );
+
+--corigiendo la tabla estudiante
+ALTER TABLE ESTUDIANTES 
+ADD CONSTRAINT fk_personas_estudiantes
+FOREIGN KEY (id_persona)
+REFERENCES personas(id_persona);
+
+
+
 
 
